@@ -1,38 +1,38 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_stop" id="33" x="-1" y="-28">
+  <block type="movement_stop" id="1" x="-1" y="-28">
     <next>
-      <block type="movement_forward" id="1">
+      <block type="movement_forward" id="2">
         <next>
-          <block type="movement_forward" id="2">
+          <block type="movement_forward" id="3">
             <next>
-              <block type="movement_stutter" id="3">
+              <block type="movement_stutter" id="4">
                 <next>
-                  <block type="movement_reverse" id="4">
+                  <block type="movement_reverse" id="5">
                     <next>
-                      <block type="movement_reverse" id="5">
+                      <block type="movement_reverse" id="6">
                         <next>
-                          <block type="movement_right" id="6">
+                          <block type="movement_right" id="7">
                             <next>
-                              <block type="controls_whileUntil" id="7" inline="false">
+                              <block type="controls_whileUntil" id="8" inline="false">
                                 <field name="MODE">UNTIL</field>
                                 <value name="NUMBER">
-                                  <block type="sensor_object" id="23">
+                                  <block type="sensor_object" id="9">
                                     <field name="OBJECT">LEFTFRONT</field>
                                   </block>
                                 </value>
                                 <statement name="DO">
-                                  <block type="movement_forward" id="8">
+                                  <block type="movement_forward" id="10">
                                     <next>
-                                      <block type="movement_left" id="9">
+                                      <block type="movement_left" id="11">
                                         <next>
-                                          <block type="movement_forward" id="10"></block>
+                                          <block type="movement_forward" id="12"></block>
                                         </next>
                                       </block>
                                     </next>
                                   </block>
                                 </statement>
                                 <next>
-                                  <block type="movement_stop" id="11"></block>
+                                  <block type="movement_stop" id="13"></block>
                                 </next>
                               </block>
                             </next>
