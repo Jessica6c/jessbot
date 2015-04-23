@@ -1,31 +1,31 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="1" y="1">
+  <block type="movement_forward" id="1" x="1" y="1">
     <next>
-      <block type="movement_forward" id="20">
+      <block type="movement_forward" id="2">
         <next>
-          <block type="movement_stutter" id="30">
+          <block type="movement_stutter" id="3">
             <next>
-              <block type="movement_reverse" id="40">
+              <block type="movement_reverse" id="4">
                 <next>
-                  <block type="movement_reverse" id="50">
+                  <block type="movement_reverse" id="5">
                     <next>
-                      <block type="movement_right" id="60">
+                      <block type="movement_right" id="6">
                         <next>
-                          <block type="controls_whileUntil" id="95" inline="false">
+                          <block type="controls_whileUntil" id="7" inline="false">
                             <field name="MODE">UNTIL</field>
                             <statement name="DO">
-                              <block type="movement_forward" id="115">
+                              <block type="movement_forward" id="8">
                                 <next>
-                                  <block type="movement_left" id="135">
+                                  <block type="movement_left" id="9">
                                     <next>
-                                      <block type="movement_forward" id="145"></block>
+                                      <block type="movement_forward" id="10"></block>
                                     </next>
                                   </block>
                                 </next>
                               </block>
                             </statement>
                             <next>
-                              <block type="movement_stop" id="182"></block>
+                              <block type="movement_stop" id="11"></block>
                             </next>
                           </block>
                         </next>
