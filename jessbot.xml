@@ -12,34 +12,43 @@
             <next>
               <block type="movement_forward" id="3">
                 <next>
-                  <block type="movement_right" id="7">
+                  <block type="robot_delay" id="97" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="126">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="movement_stutter" id="4">
+                      <block type="movement_right" id="7">
                         <next>
-                          <block type="movement_reverse" id="5">
+                          <block type="movement_stutter" id="4">
                             <next>
-                              <block type="movement_reverse" id="6">
+                              <block type="movement_reverse" id="5">
                                 <next>
-                                  <block type="controls_whileUntil" id="8" inline="false">
-                                    <field name="MODE">UNTIL</field>
-                                    <value name="NUMBER">
-                                      <block type="sensor_object" id="9">
-                                        <field name="OBJECT">LEFTFRONT</field>
-                                      </block>
-                                    </value>
-                                    <statement name="DO">
-                                      <block type="movement_forward" id="10">
-                                        <next>
-                                          <block type="movement_left" id="11">
+                                  <block type="movement_reverse" id="6">
+                                    <next>
+                                      <block type="controls_whileUntil" id="8" inline="false">
+                                        <field name="MODE">UNTIL</field>
+                                        <value name="NUMBER">
+                                          <block type="sensor_object" id="9">
+                                            <field name="OBJECT">LEFTFRONT</field>
+                                          </block>
+                                        </value>
+                                        <statement name="DO">
+                                          <block type="movement_forward" id="10">
                                             <next>
-                                              <block type="movement_forward" id="12"></block>
+                                              <block type="movement_left" id="11">
+                                                <next>
+                                                  <block type="movement_forward" id="12"></block>
+                                                </next>
+                                              </block>
                                             </next>
                                           </block>
+                                        </statement>
+                                        <next>
+                                          <block type="movement_stop" id="13"></block>
                                         </next>
                                       </block>
-                                    </statement>
-                                    <next>
-                                      <block type="movement_stop" id="13"></block>
                                     </next>
                                   </block>
                                 </next>
